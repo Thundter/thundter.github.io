@@ -1,6 +1,6 @@
 
 var inputDirectory = "C:\\TFS";
-var rejectedDirectoryNames = new System.Collections.Generic.List<string> { ".vs", "obj", "bin", "packages", "TestResults" };
+var rejectedDirectoryNames = new System.Collections.Generic.List<string> { ".vs", "obj", "bin", "packages", "TestResults", "Logs" };
 var rejectedFileExtensions = new System.Collections.Generic.List<string> { ".user", ".dll", ".exe" };
 
 // copy contents to temp directory
