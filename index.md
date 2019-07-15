@@ -5,3 +5,5 @@
 These are my own development notes for reference
 
 [Git Commands](gitcommands.html)
+
+[Acknowledgements](acknowledgements.md)
