@@ -14,15 +14,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <div style="height:100%;position:fixed!important;">
-        <header>
-          <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
-          <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
-        </header>
-        <footer>
-          <p><small><a href="/acknowledgements.html">Acknowledgements</a></small></p>
-        </footer>
-      </div>
+      <header>
+        <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
+        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+      </header>
+      <footer>
+        <p><small><a href="/acknowledgements.html">Acknowledgements</a></small></p>
+      </footer>
       <section>
         {{ content }}
       </section>
