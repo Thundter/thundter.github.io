@@ -18,12 +18,12 @@
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
       </header>
-      <footer>
-        <p><small><a href="/acknowledgements.html">Acknowledgements</a></small></p>
-      </footer>
       <section>
         {{ content }}
       </section>
+      <footer>
+        <p><small><a href="/acknowledgements.html">Acknowledgements</a></small></p>
+      </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     {% if site.google_analytics %}
