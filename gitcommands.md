@@ -153,6 +153,6 @@ You can have multiple stash stacks and pick which one you want to apply
 
 ## References
 
-The documentation on the main Git site <https://git-scm.com/doc> | book <https://git-scm.com/book/en/v2>
+The documentation on the main Git site <https://git-scm.com/doc> - book <https://git-scm.com/book/en/v2>
 
 Useful information on a branching strategy <http://nvie.com/posts/a-successful-git-branching-model/>        
