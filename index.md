@@ -4,4 +4,4 @@
 
 These are my own development notes for reference
 
-[Git Commands](gitcommands.html)
+[Git Commands](gitcommands.md)
