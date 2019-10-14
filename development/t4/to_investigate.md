@@ -6,11 +6,14 @@
 
 [T4 Runtime Templates Base Class](https://mnaoumov.wordpress.com/2012/09/27/t4-runtime-templates-base-class/) in mnaoumov.NET issues and replacing base class of t4 template. Based on [T4 Syntax](https://mnaoumov.wordpress.com/2012/09/27/t4-syntax/)
 
+[Series: In-Memory Code Generation With .NET](https://softwareproduction.eu/series/in-memory-code-generation-with-net/)
+
+
+### Stack Overflow
 
 [how to generate a Custom Class via t4?](https://stackoverflow.com/questions/8093395/how-to-generate-a-custom-class-via-t4)
 
-
-[Series: In-Memory Code Generation With .NET](https://softwareproduction.eu/series/in-memory-code-generation-with-net/)
+[Get referenced project's path in T4 template?](https://stackoverflow.com/questions/3548026/get-referenced-projects-path-in-t4-template)
 
 
 ### [Microsofts Documentation](https://docs.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates?view=vs-2019)
