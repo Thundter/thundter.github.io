@@ -4,6 +4,6 @@
 
 ---
 
-[Editors](Editors.md)
+[Editors](editors.md)
 
 [To Investigate](to_investigate.md)
