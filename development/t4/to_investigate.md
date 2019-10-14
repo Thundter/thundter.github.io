@@ -16,7 +16,7 @@
 [Get referenced project's path in T4 template?](https://stackoverflow.com/questions/3548026/get-referenced-projects-path-in-t4-template)
 
 
-### [Microsofts Documentation](https://docs.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates?view=vs-2019)
+### [Microsoft Documentation](https://docs.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates?view=vs-2019)
 
 [Run-Time Text Generation with T4 Text Templates](https://docs.microsoft.com/en-us/visualstudio/modeling/run-time-text-generation-with-t4-text-templates?view=vs-2019)
 
