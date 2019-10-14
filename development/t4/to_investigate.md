@@ -16,3 +16,5 @@
 ### [Microsofts Documentation](https://docs.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates?view=vs-2019)
 
 [Run-Time Text Generation with T4 Text Templates](https://docs.microsoft.com/en-us/visualstudio/modeling/run-time-text-generation-with-t4-text-templates?view=vs-2019)
+
+[ITextTemplatingEngineHost Interface](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
