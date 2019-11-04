@@ -21,3 +21,11 @@
 [Run-Time Text Generation with T4 Text Templates](https://docs.microsoft.com/en-us/visualstudio/modeling/run-time-text-generation-with-t4-text-templates?view=vs-2019)
 
 [ITextTemplatingEngineHost Interface](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
+
+### Peta/N POCO
+
+[PetaPoco T$ Templates](https://github.com/CollaboratingPlatypus/PetaPoco/tree/development/T4Templates)
+
+[Rhysling NPoco T4](https://github.com/Rhysling/NPoco.T4)
+
+[automatically generate pocos from db with t4](https://www.davidhaney.io/automatically-generate-pocos-from-db-with-t4/)
