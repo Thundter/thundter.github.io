@@ -17,3 +17,4 @@ Details code that a template could have
 
 [Accessing Projects via DTE in C# T4 Template](https://stackoverflow.com/questions/12952110/accessing-projects-via-dte-in-c-sharp-t4-template) offers helpful methods for overall project architecture
 
+[Can't reference an assembly in a T4 template](https://stackoverflow.com/questions/3434713/cant-reference-an-assembly-in-a-t4-template) shows you a better way to reference an assembly in a T4 Template
