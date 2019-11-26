@@ -20,3 +20,7 @@ Details code that a template could have
 [Can't reference an assembly in a T4 template](https://stackoverflow.com/questions/3434713/cant-reference-an-assembly-in-a-t4-template) shows you a better way to reference an assembly in a T4 Template
 
 [How not to output default T4 generated file?](https://stackoverflow.com/questions/2601202/how-not-to-output-default-t4-generated-file)
+
+[T4 append output to existing file](https://stackoverflow.com/questions/6261353/t4-append-output-to-existing-file)
+
+[Running T4 templates from other T4 template](https://stackoverflow.com/questions/3636094/running-t4-templates-from-other-t4-template)
