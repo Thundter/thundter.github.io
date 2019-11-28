@@ -6,4 +6,4 @@
 
 [.Net Fiddle](https://dotnetfiddle.net) 
 
-[Java Wev Token inspector](https://jwt.io/)
+[Java Web Token Debugger](https://jwt.io/)
