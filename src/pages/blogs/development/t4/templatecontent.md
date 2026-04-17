@@ -1,7 +1,8 @@
-# Template Content
-
-[Contents](index.md)
-
+---
+layout: "../../../../layouts/Blog.astro"
+title: "Template Content"
+date: "2019-11-14"
+tags: ["dev","t4", "Template"]
 ---
 
 Details code that a template could have

@@ -1,4 +1,9 @@
-# Custom Output
+---
+layout: "../../../../layouts/Blog.astro"
+title: "Custom Output"
+date: "2019-11-14"
+tags: ["dev","t4", "Custom"]
+---
 
 [Contents](index.md)
 
