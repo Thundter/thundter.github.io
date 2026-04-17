@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/dejavu-sans');
+
+html {
+    --background: #f4f4f4;
+    --text: #111;
+    --text-muted: #222;
+    --border: #ccc;
+    --link: #3E5700;
+}
+
+html.dark {
+    --background: #080808;
+    --text: #ddd;
+    --text-muted: #bbb;
+    --border: #333;
+    --link: #77A800;
+}
+
+body {
+    font-family: 'DejaVu Sans', sans-serif;
+    margin-left: 25%;
+    color: var(--text);
+    background: var(--background);
+}
+
+a {
+    color: var(--link);
+    font-style: normal;
+    text-decoration: none;
+}
+
+.emphasis {
+    font-family: 'DejaVu Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+h1+h2 {
+    font-size: 1.1rem;
+    margin-top: -1.4rem;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+main {
+    margin-left: 1rem ;
+}
+
+p{
+    font-size: 1rem;
+    color: var(--gray-400);
+    opacity: 0.8;
+}

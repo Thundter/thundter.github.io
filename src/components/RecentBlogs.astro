@@ -1,0 +1,65 @@
+---
+import { getCollection } from "astro:content";
+
+const blogs = (await getCollection("blogs")).sort((a, b) => {
+  const dateA = a.data.date ? +a.data.date : 0;
+  const dateB = b.data.date ? +b.data.date : 0;
+
+  // Sort descending
+  return dateB - dateA;
+});
+---
+
+<div>
+  <dl>
+    {
+      blogs.map((blog) => (
+        <dt class="blogs__list">
+          <a href={`/blogs/${blog.id}`} class="blog__link">
+            {blog.data.title}
+            {blog.data.date && ` - ${blog.data.date?.toISOString().substring(0, 10)}`}
+          </a>
+        </dt>
+      ))
+    }
+  </dl>
+</div>
+
+<style>
+  .featured-blogs {
+    margin: 0;
+    padding: 3rem 0 0 0;
+  }
+  .featured-blogs__title {
+    font-size: 2rem;
+    color: var(--gray-900);
+  }
+
+  .featured-blogs__description {
+    margin-top: -1.2rem;
+  }
+
+  .blogs {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .blogs__list {
+    border-bottom: 1px solid;
+    border-color: var(--gray-200);
+  }
+
+  .blog__link {
+    opacity: 1;
+    height: 100%;
+    display: block;
+    padding: 1rem 0;
+    color: var(--gray-200);
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .blog__link:hover {
+    opacity: 0.7;
+  }
+</style>

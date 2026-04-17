@@ -1,0 +1,49 @@
+---
+// const websitePicture = "https://i.imgur.com/JPGFE75.jpg";
+---
+
+<div>
+  <div class="profile">
+    <!-- <img
+      src={websitePicture}
+      class="website__picture"
+      alt="werbsite picture"
+      width="100px"
+      height="100px"
+    /> -->
+    <div class="profile__details">
+      <h1>t<i class="emphasis">n</i>plate</h1>
+      <h2>Developing Ideas</h2>
+      <!-- <p>Paragraph</p> -->
+    </div>
+  </div>
+</div>
+
+<style>
+  @import url("https://fonts.cdnfonts.com/css/dejavu-serif");
+
+  .profile {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1rem 0 3rem 0;
+  }
+
+  .emphasis {
+    font-family: "dejavu-serif";
+    font-size: 3.6rem;
+  }
+
+  .profile__details {
+    flex: 1 0 300px;
+  }
+
+  .profile__details > h1 {
+    margin-top: 0;
+  }
+
+  .profile__picture {
+    border-radius: 50%;
+    margin: 0 2rem 1rem 0;
+  }
+</style>

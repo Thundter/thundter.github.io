@@ -1,0 +1,76 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+import Main from "./Main.astro";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  website?: string
+  poster?: ImageMetadata;
+  subtitle?: string;
+  date: Date;
+  tags: Array<string>;
+}>;
+
+const { poster, website, title, subtitle, date, tags } = Astro.props.frontmatter;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/**/[^_]*.{png,jpg,jpeg,tiff,webp,gif,svg,avif}"
+);
+const imagePath = poster ? `/src/assets/${poster?.src}` : "";
+const image = poster && images[imagePath]();
+if (poster && !image) {
+  throw new Error(`"${poster}" or "${imagePath}" not found!`);
+}
+---
+
+<Main title="tnplate | Blog" , tags={tags}>
+  {
+    poster && image && (
+      <Image
+        src={image}
+        alt=""
+        width={poster.width ?? 800}
+        height={poster.height}
+      />
+    )
+  }
+
+  { website 
+    ? <a href={website} >
+        <h1>{title}</h1>
+      </a>  
+    : <h1>{title}</h1>
+  }
+  {subtitle && <h2>{subtitle}</h2>}
+  {date && <p class="date">published: {date}</p>}
+  {tags && <p class="tags">tags: {tags.join(",")}</p>}
+  <slot />
+</Main>
+
+<style>
+  h1 + h2 {
+    margin-bottom: 0rem;
+    
+  }
+
+  .figure {
+    margin: 0;
+  }
+
+  .figure__image {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .figure__caption {
+    font-size: 0.9rem;
+  }
+
+  .date, .tags {
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+  }
+</style>
