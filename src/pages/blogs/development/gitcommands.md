@@ -1,6 +1,9 @@
-# Git Commands
-
-[Index](index.md)
+---
+layout: "../../../layouts/Blog.astro"
+title: "Git Commands"
+date: "2018-11-14"
+tags: ["dev", "git"]
+---
 
 ## Creating a new repository
 
