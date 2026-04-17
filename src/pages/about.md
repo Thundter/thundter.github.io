@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/main.astro
+layout: ../layouts/Main.astro
 title: "About"
 subtitle: "About"
 tags: ["about"]
