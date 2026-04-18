@@ -6,6 +6,8 @@ date: "2024-10-27"
 tags: ["chocolatey", "install"]
 ---
 
+A package manager for windows
+
 [Packages](https://community.chocolatey.org/packages/)
 
 ## Install 
