@@ -49,6 +49,11 @@ def interpretFile(spacer, file):
     if not Path(file).is_relative_to(directoryToCheck):
         raise ValueError(f"{file} is not in {directoryToCheck}")
 
+    filename = os.path.basename(file)
+
+    if filename.startswith("_"):
+        return ""
+
     relativePath=file.replace(directoryToCheck, "").replace("\\", "/").strip("/")
     relativePath=relativePath.removesuffix(".md").removesuffix(".mdx")
     pathParts=relativePath.split("/")

@@ -1,8 +1,8 @@
 ---
 layout: "../../layouts/Blog.astro"
-title: "MindDump Astro Todo List"
+title: "Roadmap"
 date: "2026-03-27"
-tags: ["todo"]
+tags: ["todo", "roadmap"]
 ---
 
 - [x] make poster optional
@@ -16,18 +16,18 @@ tags: ["todo"]
     - [ ] size based on text width automatically
 - [x] resize testing
 - [x] recent blogs
-    - [ ] testing
+    - [x] testing
 - [ ] search functionality
 - [ ] improved theme colours
 - [ ] improved visual aspect of site 
-- [ ] push to live
+- [x] push to live
 - [ ] import md files from Minddump
 - [ ] tags
     - [x] integrate
         - [ ] test
     - [x] display
     - [ ] search by
-- [ ] reviews
-    - [ ] layout
-    - [ ] example
+- [x] reviews
+    - [x] layout
+    - [x] example
 
