@@ -2,6 +2,7 @@
 
 html {
     --background: #f4f4f4;
+    --background-alternate: #f0f0f0;
     --text: #111;
     --text-muted: #222;
     --border: #ccc;
@@ -10,8 +11,9 @@ html {
 
 html.dark {
     --background: #080808;
-    --text: #ddd;
-    --text-muted: #bbb;
+    --background-alternate: #0c0c0c;
+    --text: #eee;
+    --text-muted: #ccc;
     --border: #333;
     --link: #77A800;
 }
@@ -51,6 +53,6 @@ main {
 
 p{
     font-size: 1rem;
-    color: var(--gray-400);
+    color: var(--text);
     opacity: 0.8;
 }

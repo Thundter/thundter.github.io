@@ -32,9 +32,8 @@ const blogs = (await getCollection("blogs")).sort((a, b) => {
   }
   .featured-blogs__title {
     font-size: 2rem;
-    color: var(--gray-900);
+    color: var(--text);
   }
-
   .featured-blogs__description {
     margin-top: -1.2rem;
   }
@@ -44,9 +43,11 @@ const blogs = (await getCollection("blogs")).sort((a, b) => {
     font-weight: 500;
   }
 
-  .blogs__list {
-    border-bottom: 1px solid;
-    border-color: var(--gray-200);
+  dt:nth-child(even) {
+    background-color: var(--background);
+  }
+  dt:nth-child(odd) {
+    background-color: var(--background-alternate);
   }
 
   .blog__link {
@@ -54,7 +55,7 @@ const blogs = (await getCollection("blogs")).sort((a, b) => {
     height: 100%;
     display: block;
     padding: 1rem 0;
-    color: var(--gray-200);
+    color: var(--text);
     text-decoration: none;
     transition: opacity 0.2s ease-in-out;
   }

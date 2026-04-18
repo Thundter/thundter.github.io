@@ -7,7 +7,7 @@ tags: ["todo", "roadmap"]
 
 - [x] make poster optional
     - [x] bug: optional image not rendering when given a path
-- [x] push to git
+<!-- - [x] push to git -->
 - [x] directory structure
     - [x] exclusivly left
     - [x] get directories
@@ -24,10 +24,12 @@ tags: ["todo", "roadmap"]
 - [ ] import md files from Minddump
 - [ ] tags
     - [x] integrate
-        - [ ] test
+        - [x] test
     - [x] display
     - [ ] search by
+        - [ ] test
 - [x] reviews
     - [x] layout
     - [x] example
+- [ ] bookmarking site shows repo not site name
 

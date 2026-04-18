@@ -1,6 +1,6 @@
 ---
 layout: "../../../../layouts/Blog.astro"
-title: "get keyboard layout file from ergogen"
+title: "Get keyboard layout file from ergogen"
 date: "2026-04-11"
 tags: ["ergogen", "layout"]
 ---
@@ -26,12 +26,12 @@ python -m kbplacer.kle_serial -in points.yaml -inform ERGOGEN_INTERNAL -outform 
 
 The resulting layout.kle.json file can then be imported into tools like the Keyboard Layout Editor or its re-implementation, Keyboard Layout Editor NG, for final layout adjustments and keymap definition. 
 
-## source
+## Sources
 
-https://search.brave.com/search?q=get+keyboard+layout+file+from+ergogen&summary=1&conversation=089e2a1c2f4857e330e8490f54f1d51ef86a
-https://www.reddit.com/r/ergodox/comments/b5r55m/ez_layout_display_application/
-https://adamws.github.io/keyboard-pcb-design-with-ergogen-and-kbplacer/
-https://www.reddit.com/r/ErgoMechKeyboards/comments/jdiycm/ergogen_a_generator_utility_for_ergonomic/
-https://github.com/daniel2887/ergogen_benvallack
-https://flatfootfox.com/ergogen-introduction/
-https://www.reddit.com/r/ErgoMechKeyboards/comments/1nkegww/keyboard_layout_editor_ng/
+- https://search.brave.com/search?q=get+keyboard+layout+file+from+ergogen&summary=1&conversation=089e2a1c2f4857e330e8490f54f1d51ef86a
+- https://www.reddit.com/r/ergodox/comments/b5r55m/ez_layout_display_application/
+- https://adamws.github.io/keyboard-pcb-design-with-ergogen-and-kbplacer/
+- https://www.reddit.com/r/ErgoMechKeyboards/comments/jdiycm/ergogen_a_generator_utility_for_ergonomic/
+- https://github.com/daniel2887/ergogen_benvallack
+- https://flatfootfox.com/ergogen-introduction/
+- https://www.reddit.com/r/ErgoMechKeyboards/comments/1nkegww/keyboard_layout_editor_ng/
