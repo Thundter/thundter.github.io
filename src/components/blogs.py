@@ -180,12 +180,10 @@ with open("Blogs.astro", "w", encoding="utf-8") as f:
 </style>
 <script>
   const {{ pathname }} = window.location;
-  const activeNavigationElement = document.querySelector(
-    `nav a[href="${{pathname}}"]`
-  );
+  const anchor = document.querySelector(`a[href="${{pathname}}"]`)?.parentElement;
 
-  if (activeNavigationElement) {{
-    activeNavigationElement.classList.add("active");
+  if (anchor) {{
+    anchor.classList.add("active");
   }}
 </script>
     """)
