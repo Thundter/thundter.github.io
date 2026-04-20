@@ -18,6 +18,7 @@ Comparison of Top NAS Operating Systems
 | Unraid | Slackware | XFS / Btrfs | Docker + VMs | High | Proprietary (Paid) |
 | Rockstor | openSUSE | BTRFS | Docker ("Rock-ons") | Medium | Open Source |
 | CasaOS | Debian/Ubuntu | Ext4 / Btrfs | Docker + App Store | Very High | Open Source |
+| ZimaOS | Linux (Buildroot) | Many, BTRFS default | Docker + App Store | Very High | Open Source |
 
 TrueNAS SCALE is ideal for those needing strict data integrity with ZFS and direct Kubernetes orchestration. 
 OpenMediaVault suits users who want a modular, low-footprint system that can be customized with standard Linux tools. 

@@ -58,21 +58,17 @@ def interpretFile(spacer, file):
     relativePath=relativePath.removesuffix(".md").removesuffix(".mdx")
     pathParts=relativePath.split("/")
     className="__".join(pathParts)
+    className=f"blogs__{className}".replace("____","__")
     title=getTitle(file).title()
+    fileType=getFileType(file)
 
     nbsp="&nbsp;&nbsp;"
     for item in range(len(pathParts)-2):
         nbsp+="&nbsp;&nbsp;&nbsp;"
 
-    fileType=getFileType(file)
-
-    directorySymbol=""
-
-    className=f"blogs__{className}".replace("____","__")
-
     return f"""
     {spacer}<li class="blogs__list__item">
-    {spacer}  {nbsp}{directorySymbol}{fileType}
+    {spacer}  {nbsp}{fileType}
     {spacer}  <a href={{`/blogs/{relativePath}`}} class="{className}">
     {spacer}    {title}
     {spacer}  </a>
