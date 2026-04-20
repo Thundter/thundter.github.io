@@ -5,8 +5,6 @@ date: "2026-03-15"
 tags: ["ergogen", "mounting hole"]
 ---
 
-# mounting-hole-in-outline
-
 To create mounting holes in an Ergogen outline, you define a new outlines section with what: circle and specify the where location using reference points (like matrix_outer_num) and shift values to position them between keys or diodes. This outline is then typically referenced in the cases section to generate the 3D case geometry, or used directly as a footprint in the pcbs section to drill holes in the PCB. 
 
 ### Configuration Example
