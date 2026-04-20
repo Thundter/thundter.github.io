@@ -1,0 +1,459 @@
+meta:
+  engine: 4.1.0
+units:
+  # Proxy Spacing Variables
+  kx: cx
+  ky: cy
+points:
+  key:
+    padding: ky
+    spread: kx
+  zones:
+    matrixleft:
+      anchor.shift: [45,-110] # Fix KiCad placement
+      columns:
+        outer:
+          key:
+            column_net: P2
+        pinky:
+          key:
+            column_net: P3
+        ring:
+          key:
+            # stagger: 4
+            column_net: P4
+        middle:
+          key:
+            # stagger: 4
+            column_net: P5
+        index:
+          key:
+            column_net: P6
+        inner:
+          key:
+            column_net: P7
+      rows:
+        bottom:
+          row_net: P21
+        home:
+          row_net: P20
+        top:
+          row_net: P19
+        number:
+          row_net: P18
+        function:
+          row_net: P15
+    modifierleft:
+      anchor:
+        aggregate.parts:
+          - ref: matrixleft_outer_bottom
+        shift: [0, -ky]
+      rows:
+        key:
+          row_net: ???
+      columns:
+        outer:
+          key:
+            column_net: P3
+        pinky:
+          key:
+            column_net: P5
+        ring:
+          key:
+            # stagger: 4
+            column_net: P6
+    thumbleft:
+      anchor:
+        aggregate.parts:
+          - ref: matrixleft_index_bottom
+        shift: [0, -ky]
+      columns:
+        left:
+          key:
+            shift: [0,-ky*.25]
+        middle:
+          key:
+            rotate: -9
+            shift: [3,-1.5-ky*.25]
+        right:
+          key:
+            rotate: -20
+            shift: [5.5,-6.5-ky*.25]
+        inner:
+          key:
+            rotate: -29
+            shift: [6.5,-15-ky*.25]
+    matrixright:
+      anchor.shift: [265,-110] # Fix KiCad placement
+      columns:
+        middle:
+          key:
+            # stagger: 4
+            column_net: P7        
+        index:
+          key:
+            column_net: P8
+        inner:
+          key:
+            column_net: P9        
+        ring:
+          key:
+            # stagger: 4
+            column_net: P6
+        pinky:
+          key:
+            column_net: P5
+        outer2:
+          key:
+            column_net: P3
+        outer1:
+          key:
+            column_net: P2
+      rows:
+        bottom:
+          row_net: P21
+        home:
+          row_net: P20
+        top:
+          row_net: P19
+        number:          
+          row_net: P18
+        function:
+          row_net: P17
+    modifierright:
+      anchor:
+        aggregate.parts:
+          - ref: matrixright_ring_bottom
+        shift: [0, -ky]
+      columns:
+        outer1:
+          key:
+            column_net: P3
+        outer2:
+          key:
+            column_net: P3
+        pinky:
+          key:
+            column_net: P5
+        ring:
+          key:
+            # stagger: 4
+            column_net: P6
+    thumbright:
+      anchor:
+        aggregate.parts:
+          - ref: matrixright_index_bottom
+        shift: [0, -ky]
+      columns:
+        left:
+          key:
+            shift: [0,-ky*.25]
+        middle:
+          key:
+            rotate: 9
+            shift: [-39,-1.5-ky*.25]
+        right:
+          key:
+            rotate: 20
+            shift: [-77.5,-6.5-ky*.25]
+        inner:  
+          key:
+            rotate: 29
+            shift: [-114.5,-15-ky*.25]  
+pcbs:
+  pcb:
+    template: kicad8
+    outlines:
+      main:
+        outline: CompletePCB
+        layer: Edge.Cuts
+    footprints:
+      keyswitches:
+        what: ceoloide/switch_choc_v1_v2
+        where: true
+        params:
+          to: "{{column_net}}"
+          from: "{{colrow}}"
+          include_keycap: true
+          hotswap: true
+      diodes:
+        what: ceoloide/diode_tht_sod123
+        where: true
+        adjust:
+          shift: [0, -4.7]
+          rotate: 180
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      controllerleft:
+        what: ceoloide/mcu_nice_nano
+        where:
+          aggregate.parts:
+            - ref: matrixleft_inner_function
+          shift: [20, -5]
+      controllerright:
+        what: ceoloide/mcu_nice_nano
+        where:
+          aggregate.parts:
+            - ref: matrixright_inner_function
+          shift: [-56, -5]
+outlines:
+  LeftBaseLayer:
+    - what: polygon
+      fillet: 5
+      points:
+        - ref: matrixleft_outer_function
+          shift: [-kx, ky]
+        - ref: matrixleft_outer_bottom
+          shift: [-kx, -2.25ky] 
+        - ref: matrixleft_index_bottom
+          shift: [-kx, -2.25ky] 
+        - ref: thumbleft_left
+          shift: [0, -ky]
+        - ref: thumbleft_left
+          shift: [0, -ky]
+        - ref: thumbleft_middle
+          shift: [0, -ky]
+        - ref: thumbleft_right
+          shift: [0, -ky]
+        - ref: thumbleft_inner
+          shift: [0, -ky]
+        - ref: thumbleft_inner
+          shift: [kx, -ky]
+        - ref: thumbleft_inner
+          shift: [kx, ky]
+        - ref: thumbleft_inner
+          shift: [0, ky]
+        - ref: thumbleft_right
+          shift: [0, ky]
+        - ref: matrixleft_inner_bottom
+          shift: [kx, -0.5ky]
+        - ref: matrixleft_inner_top
+          shift: [kx, 0.3ky]
+        - ref: matrixleft_inner_top
+          shift: [2kx, 0.3ky]
+        - ref: matrixleft_inner_function
+          shift: [2kx, ky]
+  LeftKeyLayer:
+    - what: polygon
+      fillet: 5
+      points:
+        - ref: matrixleft_outer_function
+          shift: [-kx, ky]
+        - ref: matrixleft_outer_bottom
+          shift: [-kx, -2.25ky] 
+        - ref: matrixleft_index_bottom
+          shift: [-kx, -2.25ky] 
+        - ref: thumbleft_left
+          shift: [0, -ky]
+        - ref: thumbleft_left
+          shift: [0, -ky]
+        - ref: thumbleft_middle
+          shift: [0, -ky]
+        - ref: thumbleft_right
+          shift: [0, -ky]
+        - ref: thumbleft_inner
+          shift: [0, -ky]
+        - ref: thumbleft_inner
+          shift: [kx, -ky]
+        - ref: thumbleft_inner
+          shift: [kx, ky]
+        - ref: thumbleft_inner
+          shift: [0, ky]
+        - ref: thumbleft_right
+          shift: [0, ky]
+        - ref: matrixleft_inner_bottom
+          shift: [kx, -0.5ky]
+        - ref: matrixleft_inner_top
+          shift: [kx, 0.3ky]
+        - ref: matrixleft_inner_top
+          shift: [2kx, 0.3ky]
+        - ref: matrixleft_inner_function
+          shift: [2kx, ky]
+    # left key holes
+    - what: rectangle
+      where: 
+        - /matrixleft.*/
+        - /modifierleft.*/
+        - /thumbleft.*/
+      size: [14, 14]
+      operation: subtract
+  LeftPCB:
+    - what: polygon
+      points:
+        - ref: matrixleft_outer_function
+          shift: [-0.6kx, 0.6ky]
+        - ref: matrixleft_outer_bottom
+          shift: [-0.6kx, -1.6ky]
+        - ref: matrixleft_index_bottom
+          shift: [-0.6kx, -1.6ky]
+        - ref: thumbleft_left
+          shift: [-0.6kx, -0.6ky]
+        - ref: thumbleft_left
+          shift: [0, -0.6ky]
+        - ref: thumbleft_left
+          shift: [0.5kx, -0.6ky]
+        - ref: thumbleft_middle
+          shift: [-0.5kx, -0.6ky]
+        - ref: thumbleft_middle
+          shift: [0.5kx, -0.6ky]
+        - ref: thumbleft_right
+          shift: [-0.5kx, -0.6ky]
+        - ref: thumbleft_right
+          shift: [0.5kx, -0.6ky]
+        - ref: thumbleft_inner
+          shift: [-0.5kx, -0.6ky]
+        - ref: thumbleft_inner
+          shift: [0.6kx, -0.6ky]
+        - ref: thumbleft_inner
+          shift: [0.6kx, 0.6ky]
+        - ref: thumbleft_inner
+          shift: [-0.5kx, 0.6ky]
+        - ref: thumbleft_right
+          shift: [0.5kx, 0.6ky]
+        - ref: thumbleft_right
+          shift: [-0.5kx, 0.6ky]
+        - ref: thumbleft_middle
+          shift: [0.5kx, 0.6ky]
+        - ref: thumbleft_middle
+          shift: [0.35kx, 0.6ky]
+        - ref: matrixleft_inner_number
+          shift: [0.6kx, -0.4ky]
+        - ref: matrixleft_inner_number
+          shift: [1.7kx, -0.4ky]
+        - ref: matrixleft_inner_function
+          shift: [1.7kx, 0.6ky]
+  RightBaseLayer:
+    - what: polygon
+      fillet: 5  
+      points:
+        - ref: matrixright_outer2_function
+          shift: [2kx, ky]
+        - ref: matrixright_outer2_bottom
+          shift: [2kx, -2.25ky] 
+        - ref: thumbright_left
+          shift: [0, -ky]
+        - ref: thumbright_middle
+          shift: [0, -ky]
+        - ref: thumbright_right
+          shift: [0, -ky]
+        - ref: thumbright_inner
+          shift: [0, -ky]
+        - ref: thumbright_inner
+          shift: [-kx, -ky]
+        - ref: thumbright_inner
+          shift: [-kx, ky]
+        - ref: thumbright_inner
+          shift: [0, ky]
+        - ref: thumbright_right
+          shift: [0, ky]
+        - ref: matrixright_inner_bottom
+          shift: [-3kx, -0.5ky]
+        - ref: matrixright_inner_top
+          shift: [-3kx, 0.3ky]
+        - ref: matrixright_inner_top
+          shift: [-4kx, 0.3ky]
+        - ref: matrixright_inner_function
+          shift: [-4kx, ky]
+        - ref: matrixright_outer2_function
+          shift: [-kx, ky]
+  RightKeyLayer:
+    - what: polygon
+      fillet: 5  
+      points:
+        - ref: matrixright_outer2_function
+          shift: [2kx, ky]
+        - ref: matrixright_outer2_bottom
+          shift: [2kx, -2.25ky] 
+        - ref: thumbright_left
+          shift: [0, -ky]
+        - ref: thumbright_middle
+          shift: [0, -ky]
+        - ref: thumbright_right
+          shift: [0, -ky]
+        - ref: thumbright_inner
+          shift: [0, -ky]
+        - ref: thumbright_inner
+          shift: [-kx, -ky]
+        - ref: thumbright_inner
+          shift: [-kx, ky]
+        - ref: thumbright_inner
+          shift: [0, ky]
+        - ref: thumbright_right
+          shift: [0, ky]
+        - ref: matrixright_inner_bottom
+          shift: [-3kx, -0.5ky]
+        - ref: matrixright_inner_top
+          shift: [-3kx, 0.3ky]
+        - ref: matrixright_inner_top
+          shift: [-4kx, 0.3ky]
+        - ref: matrixright_inner_function
+          shift: [-4kx, ky]
+        - ref: matrixright_outer2_function
+          shift: [-kx, ky]
+    # right key holes
+    - what: rectangle
+      where: 
+        - /matrixright.*/
+        - /modifierright.*/
+        - /thumbright.*/
+      size: [14, 14]
+      operation: subtract
+  RightPCB:
+    - what: polygon
+      points:
+        - ref: matrixright_outer2_function
+          shift: [1.6kx, 0.6ky]
+        - ref: matrixright_outer2_bottom
+          shift: [1.6kx, -1.6ky]
+        - ref: thumbright_left
+          shift: [0.6kx, -0.35ky]
+        - ref: thumbright_left
+          shift: [0.6kx, -0.6ky]
+        - ref: thumbright_left
+          shift: [-0.5kx, -0.6ky]
+        - ref: thumbright_middle
+          shift: [0.5kx, -0.6ky]
+        - ref: thumbright_middle
+          shift: [-0.5kx, -0.6ky]
+        - ref: thumbright_right
+          shift: [0.5kx, -0.6ky]
+        - ref: thumbright_right
+          shift: [-0.5kx, -0.6ky]
+        - ref: thumbright_inner
+          shift: [0.5kx, -0.6ky]
+        - ref: thumbright_inner
+          shift: [-0.6kx, -0.6ky]
+        - ref: thumbright_inner
+          shift: [-0.6kx, 0.6ky]
+        - ref: thumbright_inner
+          shift: [0.5kx, 0.6ky]
+        - ref: thumbright_right
+          shift: [-0.5kx, 0.6ky]
+        - ref: thumbright_right
+          shift: [0.5kx, 0.6ky]
+        - ref: thumbright_middle
+          shift: [-0.5kx, 0.6ky]
+        - ref: thumbright_middle
+          shift: [-0.35kx, 0.6ky]
+        - ref: matrixright_inner_number
+          shift: [-2.6kx, -0.4ky]
+        - ref: matrixright_inner_number
+          shift: [-3.7kx, -0.4ky]
+        - ref: matrixright_inner_function
+          shift: [-3.7kx, 0.6ky]
+  CompleteBaseLayer:
+    - what: outline
+      name: LeftBaseLayer
+    - what: outline
+      name: RightBaseLayer
+  CompleteKeyLayer:
+    - what: outline
+      name: LeftKeyLayer
+    - what: outline
+      name: RightKeyLayer
+  CompletePCB:
+    - what: outline
+      name: LeftPCB
+    - what: outline
+      name: RightPCB

@@ -139,38 +139,53 @@ if os.path.exists("Blogs.astro"):
 # write file
 with open("Blogs.astro", "w", encoding="utf-8") as f:
     f.write(f"""---
-    /* generated code - do not change manually */
-    ---
+/* generated code - do not change manually */
+---
 
-    <div class="blogs__directory">
-    Table of Contents
-        {interpretDirectory("", directoryToCheck)}
-    </div>
-    <style>
-    .blogs__directory {{
-        margin: 5px 0 0 5px;
-        width: 25%;
-        height: 100vh;
-        float: left;
-        position: fixed;
-        left: 0;
-        top: 0;
-        border-style: solid;
-        border-color: var(--border);
-        border-width: 0 1px 0 0;
-        overflow-y: auto;
-        z-index: 1000;
-    }}
+<div class="blogs__directory">
+    Table of Contents{interpretDirectory("", directoryToCheck)}
+</div>
+<style>
+  .blogs__directory {{
+    margin: 5px 0 0 5px;
+    width: 25%;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-style: solid;
+    border-color: var(--border);
+    border-width: 0 1px 0 0;
+    overflow-y: auto;
+    z-index: 1000;
+  }}
 
-    ul {{
-        margin: 0;
-        padding: 0;
-    }}
+  ul {{
+    margin: 0;
+    padding: 0;
+  }}
 
-    li {{
-        display: list-item;
-        list-style-position: inside;
-        list-style-type: none;
-    }}
-    </style>
+  li {{
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: none;
+  }}
+
+  li.active {{
+    background: var(--text);
+    color: var(--background);
+  }}
+
+</style>
+<script>
+  const {{ pathname }} = window.location;
+  const activeNavigationElement = document.querySelector(
+    `nav a[href="${{pathname}}"]`
+  );
+
+  if (activeNavigationElement) {{
+    activeNavigationElement.classList.add("active");
+  }}
+</script>
     """)

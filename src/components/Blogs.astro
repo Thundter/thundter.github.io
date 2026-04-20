@@ -1,10 +1,9 @@
 ---
-    /* generated code - do not change manually */
-    ---
+/* generated code - do not change manually */
+---
 
-    <div class="blogs__directory">
+<div class="blogs__directory">
     Table of Contents
-        
     <li class="blogs__list__item">
       
       <ul class="blogs__directory__ul">
@@ -183,14 +182,44 @@
            
           <li class="blogs__list__item">
             &nbsp;&nbsp;ы
+            <a href={`/blogs/keyboard/BuildGuides`} class="blogs__keyboard__BuildGuides">
+              Build Guides
+            </a>
+          </li>
+          <li class="blogs__list__item">
+            &nbsp;&nbsp;ы
+            <a href={`/blogs/keyboard/Components`} class="blogs__keyboard__Components">
+              Components
+            </a>
+          </li>
+          <li class="blogs__list__item">
+            &nbsp;&nbsp;ы
+            <a href={`/blogs/keyboard/KiCadExamples`} class="blogs__keyboard__KiCadExamples">
+              Kicad Examples
+            </a>
+          </li>
+          <li class="blogs__list__item">
+            &nbsp;&nbsp;ы
+            <a href={`/blogs/keyboard/TaskList`} class="blogs__keyboard__TaskList">
+              Keyboard Roadmap
+            </a>
+          </li>
+          <li class="blogs__list__item">
+            &nbsp;&nbsp;ы
+            <a href={`/blogs/keyboard/index`} class="blogs__keyboard__index">
+              Keyboard Index
+            </a>
+          </li>
+          <li class="blogs__list__item">
+            &nbsp;&nbsp;ы
             <a href={`/blogs/keyboard/keylayer-plate-thickness`} class="blogs__keyboard__keylayer-plate-thickness">
               Keylayer Plate Thickness
             </a>
           </li>
           <li class="blogs__list__item">
             &nbsp;&nbsp;ы
-            <a href={`/blogs/keyboard/tools`} class="blogs__keyboard__tools">
-              Ergogen Tools
+            <a href={`/blogs/keyboard/splitkb`} class="blogs__keyboard__splitkb">
+              Splitkb
             </a>
           </li>
           <li class="blogs__list__item">
@@ -217,6 +246,12 @@
              </li>
              <li class="blogs__list__item">
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
+               <a href={`/blogs/keyboard/ergogen/links`} class="blogs__keyboard__ergogen__links">
+                 Ergogen Links
+               </a>
+             </li>
+             <li class="blogs__list__item">
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
                <a href={`/blogs/keyboard/ergogen/mounting-hole-in-outline`} class="blogs__keyboard__ergogen__mounting-hole-in-outline">
                  Mounting Hole In Outline
                </a>
@@ -227,32 +262,48 @@
        </li>
       </ul>
     </li>
-    </div>
-    <style>
-    .blogs__directory {
-        margin: 5px 0 0 5px;
-        width: 25%;
-        height: 100vh;
-        float: left;
-        position: fixed;
-        left: 0;
-        top: 0;
-        border-style: solid;
-        border-color: var(--border);
-        border-width: 0 1px 0 0;
-        overflow-y: auto;
-        z-index: 1000;
-    }
+</div>
+<style>
+  .blogs__directory {
+    margin: 5px 0 0 5px;
+    width: 25%;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-style: solid;
+    border-color: var(--border);
+    border-width: 0 1px 0 0;
+    overflow-y: auto;
+    z-index: 1000;
+  }
 
-    ul {
-        margin: 0;
-        padding: 0;
-    }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
-    li {
-        display: list-item;
-        list-style-position: inside;
-        list-style-type: none;
-    }
-    </style>
+  li {
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: none;
+  }
+
+  li.active {
+    background: var(--text);
+    color: var(--background);
+  }
+
+</style>
+<script>
+  const { pathname } = window.location;
+  const activeNavigationElement = document.querySelector(
+    `nav a[href="${pathname}"]`
+  );
+
+  if (activeNavigationElement) {
+    activeNavigationElement.classList.add("active");
+  }
+</script>
     
