@@ -16,4 +16,4 @@ Product: apple & cinnamon superfood breakfast
 
 Ingredients: Red Quinoa, Couscous (Durum Wheat Semolina), Oats, Coconut Sugar, Soy Crispies, Skimmed Milk Powder, Sunflower Seeds, Golden Sultanas, Ground Cinnamon, Flaxseed Powder, Colour (E150c), Flavouring, Freeze Dried Apple, Chia Seeds
 
-Notes: Blegh. Poor Taste. Doesn't taste of apples or cinnamon. Tastes of unprocessed flour. Sultanas make it worse
+Verdict: Blegh. Poor Taste. Doesn't taste of apples or cinnamon. Tastes of unprocessed flour. Sultanas make it worse
