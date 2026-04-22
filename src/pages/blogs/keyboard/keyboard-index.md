@@ -1,6 +1,6 @@
 ---
 layout: "../../../layouts/Blog.astro"
-title: "Keyboard index"
+title: "Index"
 date: "2024-03-24"
 tags: ["keyboard", "index"]
 ---
@@ -13,14 +13,6 @@ __[Track Beast build log: a trackball Dactyl-manuform](https://medium.com/@kinca
 
 ### [Components](Components.md)
 
-## Tools
-
-[Keyboard Layout Editor](https://www.keyboard-layout-editor.com/)
-
-[Swill Plate & Case Builder](http://builder.swillkb.com/) - [Features](https://builder-docs.swillkb.com/features/)
-
-[KiCAD](https://www.kicad.org/)
-
 ## sources
 
 [The Dactyl-Manuform-R-Track with QMK features on a tracking ball](https://www.reddit.com/r/MechanicalKeyboards/comments/g3aue6/the_dactylmanuformrtrack_with_qmk_features_on_a/?onetap_auto=true)
@@ -29,9 +21,7 @@ https://gitlab.com/keyboards1/qmk_firmware/-/tree/master/keyboards/handwired/dac
 
 https://www.reddit.com/r/MechanicalKeyboards/wiki/recommendedsellers/#wiki_small_custom_keyboard_sellers_.28alphabetical.29
 
-## [Making](Index.md) > Keeb.io
-
-### keyboards
+## keyboards
 
 [wylderbuilds](https://wylderbuilds.com/shop/p/made-to-order-dactyl-manuform-cases) took over 6 months to arrive, not gonna do again
 
@@ -54,7 +44,6 @@ https://typeractive.xyz/
 https://www.reddit.com/r/MechanicalKeyboards/comments/ccstj7/laserboost_vs_lasergist_my_experience/
 
 https://www.laserboost.com/en/create
-
 
 ### [keeb.io](https://keeb.io)
 
@@ -122,6 +111,4 @@ https://www.instructables.com/Custom-Ortholinear-Keyboard-Project-Write-Up/
 https://www.instructables.com/Adding-Keys-to-a-Mechanical-Keyboard/
 https://www.instructables.com/My-First-Handwired-Keyboard-With-Analog-Controlled/
 
-
-
-[How I Made: A PCB Mechanical Keyboard](https://magazine.raspberrypi.com/articles/how-i-made-a-pcb-mechanical-keyboard) a very basic overview on how to create a mechanical keyboard. Leaves out too many details to be helpful
+<!-- [How I Made: A PCB Mechanical Keyboard](https://magazine.raspberrypi.com/articles/how-i-made-a-pcb-mechanical-keyboard) a very basic overview on how to create a mechanical keyboard. Leaves out too many details to be helpful -->

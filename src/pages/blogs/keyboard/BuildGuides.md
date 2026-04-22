@@ -13,6 +13,8 @@ r/MechanicalKeyboards
 
 [Keyball46](https://github.com/Yowkees/keyball/blob/main/keyball46/doc/rev1/buildguide_en.md) - not enough keys for me, solder construction & components guide 
 
+<!-- https://github.com/Yowkees/keyball/blob/main/keyball46/doc/rev1/images/yw001.jpg -->
+
 [BFO-9000](https://docs.keeb.io/bfo-9000-build-guide) - 
 
 ## from scratch
@@ -35,39 +37,14 @@ r/MechanicalKeyboards
 
 ### [Auryn Codes](https://www.youtube.com/@CodingWithAuryn/videos)
 
-#### Building My Dream Keyboard with Custom PCB Design 
+His dream keyboard with custom PCB design explanation
 
-##### [Part 1](https://www.youtube.com/watch?v=ohu4tZ4qov8)
+[Part 1](https://www.youtube.com/watch?v=ohu4tZ4qov8)
 
 - suggests Ben Vallack's keyboard videos
 - suggests Ergogen
-- 
-
 
 [Part 2](https://www.youtube.com/watch?v=3RLsh07ZFMo)
-
-
-### [FlatFootFox](https://flatfootfox.com/)
-
-"_Tech reviews, DIY projects, and longform write-ups_"
-
-[A Slow Decent Into Mechanical Keyboard Nerdery](https://flatfootfox.com/a-review-of-the-sofle-choc/) - A Review of the Sofle Choc - informative details about mechanical KB design
-
-#### Let's Design A Keyboard With Ergogen v4
-
-[Introduction](https://flatfootfox.com/ergogen-introduction/)
-
-[Units & Points (Part 1)](https://flatfootfox.com/ergogen-part1-units-points/)
-
-- Choc keys have cx and cy to quickly reference the 18mm width and 17mm height of these rectangular keys.
-
-[Outlines (Part 2)](https://flatfootfox.com/ergogen-part2-outlines/)
-
-[The PCB (Part 3)](https://flatfootfox.com/ergogen-part3-pcbs/)
-
-[Footprints & Cases (Part 4)](https://flatfootfox.com/ergogen-part4-footprints-cases/) 
-
-[Kicad Firmware Assembly (Part 5)](https://flatfootfox.com/ergogen-part5-kicad-firmware-assembly/)
 
 ## [Plate & Case Builder](http://builder.swillkb.com/) 
 
