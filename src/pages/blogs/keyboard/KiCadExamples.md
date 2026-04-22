@@ -35,9 +35,13 @@ When attempting to design my own split keyboard, I needed some examples for refe
 - not sure about layout
 - too few keys for me 
 
-### [keyboard pcb](https://github.com/ahtn/keyboard_pcb) GitHub Repo containing several designs for keyboards
+### [keyboard pcb](https://github.com/ahtn/keyboard_pcb)
 
-### [tmk \ keyboard_parts.pretty](https://github.com/tmk/keyboard_parts.pretty) GitHub Repo, a load of kicad_mod files
+GitHub Repo containing several designs for keyboards
+
+### [tmk \ keyboard_parts.pretty](https://github.com/tmk/keyboard_parts.pretty)
+
+GitHub Repo, a load of kicad_mod files
 
 ### [Keebio Docs](https://docs.keeb.io/main)
 
