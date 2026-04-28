@@ -12,11 +12,14 @@ type Props = MarkdownLayoutProps<{
   date: Date;
   tags: Array<string>;
   brand: string;
-  recommend: string;
+  verdict?: string;
+  verdictColour?: string;
 }>;
 
-const { title, website, poster, subtitle, date, tags, brand, recommend } =
+const { title, website, poster, subtitle, date, tags, brand, verdict, verdictColour } =
   Astro.props.frontmatter;
+
+const verdict_colour = verdictColour ? `color: ${verdictColour};` : "";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/**/[^_]*.{png,jpg,jpeg,tiff,webp,gif,svg,avif}"
@@ -45,12 +48,12 @@ if (poster && !image) {
     website ? (
       <a href={website}>
         <h1>
-          {title} {recommend}
+          {title}
         </h1>
       </a>
     ) : (
       <h1>
-        {title} {recommend}
+        {title}
       </h1>
     )
   }
@@ -64,6 +67,7 @@ if (poster && !image) {
   {subtitle && <h2>{subtitle}</h2>}
   {date && <p class="date">published: {date}</p>}
   {tags && <p class="tags">tags: {tags.join(",")}</p>}
+  {verdict && <h2>Verdict: <label style={verdict_colour}>{verdict}</label></h2>}
   <slot />
 </Main>
 <style>
