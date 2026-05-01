@@ -1,6 +1,6 @@
 ---
 layout: "../../../layouts/Blog.astro"
-title: "being prepared"
+title: "Being Prepared"
 date: "2026-04-12"
 tags: ["food", "preparation"]
 ---
