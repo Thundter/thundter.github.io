@@ -3,7 +3,7 @@ from pathlib import Path
 import os
 
 directoryToCheck="../pages/blogs"
-#│├└📁ыR
+#│├└📁📂🍔🍖🧀 !
 
 def interpretDirectory(spacer, directory):
     directoryParts=directory.replace(directoryToCheck, "").replace("\\", "/").strip("/").split("/")
@@ -19,7 +19,7 @@ def interpretDirectory(spacer, directory):
         if directoryDifference == "": # fix subdirectories
             for file in files:
                 if file.endswith(".md") | file.endswith(".mdx"):
-                    fullFilePath=(directory + "/" + file).replace("//", "/")
+                    fullFilePath=(directory + "/" + file).replace("//", "/").replace("\\", "/")
                     # print("file:", fullFilePath)
                     content+=interpretFile(spacer + "   ", fullFilePath)
         elif len(directoryDifference.replace("\\", "/").split("/")) == 1:
@@ -36,16 +36,19 @@ def interpretDirectory(spacer, directory):
     else:
         directoryIcon="📁 "
 
+    className="__".join(directoryParts)
+    className=f"blogs__{className}".replace("____","__")
+
     return f"""
-    {spacer}<li class="blogs__list__item">
-    {spacer}  {nbsp}{directoryIcon}{directoryName.title()}
+    {spacer}<li class="blogs__list__folderitem">
+    {spacer}  {nbsp}<a onclick="handleFolderClick(event)" class="{className}">{directoryIcon}{directoryName.title()}</a>
     {spacer}  <ul class="blogs__directory__ul">
     {spacer}    {content}
     {spacer}  </ul>
     {spacer}</li>"""
 
 def interpretFile(spacer, file):
-    # print("interpretFile(", spacer, file,")") 
+    # print(f"interpretFile::spacer:{spacer}|file:{file}") 
     if not Path(file).is_relative_to(directoryToCheck):
         raise ValueError(f"{file} is not in {directoryToCheck}")
 
@@ -67,14 +70,15 @@ def interpretFile(spacer, file):
         nbsp+="&nbsp;&nbsp;&nbsp;"
 
     return f"""
-    {spacer}<li class="blogs__list__item">
-    {spacer}  {nbsp}{fileType}
-    {spacer}  <a href={{`/blogs/{relativePath}`}} class="{className}">
-    {spacer}    {title}
-    {spacer}  </a>
-    {spacer}</li>"""
+    {spacer}<table>
+    {spacer}  <tr class="blogs__list__fileitem">
+    {spacer}    <td class="blogs__filetype">{nbsp}{fileType}</td>
+    {spacer}    <td><a href={{`/blogs/{relativePath}`}} class="{className}">{title}</a></td>
+    {spacer}  </tr>
+    {spacer}</table>"""
 
 def getTitle(file):
+    # print(f"getTitle::file:{file}")
     my_file = open(file,'r')
     lineContent=my_file.readline()
     lineContent=lineContent.strip()
@@ -118,11 +122,11 @@ def getFileType(file):
             # print("getFileType:", lineContent) 
             if lineContent == "---":
                 # no recommend found, returning ы
-                output="ы"
+                output="Blg"
                 break
             elif lineContent.startswith("recommend:"):
                 # recommend found, returning R
-                output="R"
+                output="Rvw"
                 break
             else:
                 continue
@@ -130,7 +134,7 @@ def getFileType(file):
         return output
     else:
         my_file.close()
-        return "ы"
+        output="Blg"
 
 # delete previous file
 if os.path.exists("Blogs.astro"):
@@ -159,6 +163,10 @@ with open("Blogs.astro", "w", encoding="utf-8") as f:
     border-width: 0 1px 0 0;
     overflow-y: auto;
     z-index: 1000;
+  }}
+
+  .blogs__filetype {{
+    font-size: 0.5rem;
   }}
 
   ul {{

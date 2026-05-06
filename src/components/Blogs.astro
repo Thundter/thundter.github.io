@@ -4,276 +4,276 @@
 
 <div class="blogs__directory">
     Table of Contents
-    <li class="blogs__list__item">
-      
+    <li class="blogs__list__folderitem">
+      <a onclick="handleFolderClick(event)" class="blogs__"></a>
       <ul class="blogs__directory__ul">
         
-       <li class="blogs__list__item">
-         &nbsp;&nbsp;ы
-         <a href={`/blogs/todo-list`} class="blogs__todo-list">
-           Roadmap
-         </a>
-       </li>
-       <li class="blogs__list__item">
-         📁 Applications
+       <table>
+         <tr class="blogs__list__fileitem">
+           <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+           <td><a href={`/blogs/todo-list`} class="blogs__todo-list">Roadmap</a></td>
+         </tr>
+       </table>
+       <li class="blogs__list__folderitem">
+         <a onclick="handleFolderClick(event)" class="blogs__applications">📁 Applications</a>
          <ul class="blogs__directory__ul">
            
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/applications/volta`} class="blogs__applications__volta">
-              Volta
-            </a>
-          </li>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/applications/volta`} class="blogs__applications__volta">Volta</a></td>
+            </tr>
+          </table>
          </ul>
        </li>
-       <li class="blogs__list__item">
-         📁 Development
+       <li class="blogs__list__folderitem">
+         <a onclick="handleFolderClick(event)" class="blogs__development">📁 Development</a>
          <ul class="blogs__directory__ul">
            
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/development/chocolatey`} class="blogs__development__chocolatey">
-              Chocolatey
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/development/contrast-checker`} class="blogs__development__contrast-checker">
-              Web Resources
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/development/gitcommands`} class="blogs__development__gitcommands">
-              Git Commands
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;&nbsp;📁 Astro
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/development/chocolatey`} class="blogs__development__chocolatey">Chocolatey</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/development/contrast-checker`} class="blogs__development__contrast-checker">Web Resources</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/development/gitcommands`} class="blogs__development__gitcommands">Git Commands</a></td>
+            </tr>
+          </table>
+          <li class="blogs__list__folderitem">
+            &nbsp;&nbsp;&nbsp;<a onclick="handleFolderClick(event)" class="blogs__development__astro">📁 Astro</a>
             <ul class="blogs__directory__ul">
               
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/development/astro/blog-collection-structure`} class="blogs__development__astro__blog-collection-structure">
-                 Directory Structure Of Blogs Collection
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/development/astro/errors`} class="blogs__development__astro__errors">
-                 Astro Errors
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/development/astro/image-metadata`} class="blogs__development__astro__image-metadata">
-                 Imagemetadata
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/development/astro/links`} class="blogs__development__astro__links">
-                 Links
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/development/astro/search-tool`} class="blogs__development__astro__search-tool">
-                 Search Tool
-               </a>
-             </li>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/development/astro/blog-collection-structure`} class="blogs__development__astro__blog-collection-structure">Directory Structure Of Blogs Collection</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/development/astro/errors`} class="blogs__development__astro__errors">Astro Errors</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/development/astro/image-metadata`} class="blogs__development__astro__image-metadata">Imagemetadata</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/development/astro/links`} class="blogs__development__astro__links">Links</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/development/astro/search-tool`} class="blogs__development__astro__search-tool">Search Tool</a></td>
+               </tr>
+             </table>
             </ul>
           </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;&nbsp;📁 T4
+          <li class="blogs__list__folderitem">
+            &nbsp;&nbsp;&nbsp;<a onclick="handleFolderClick(event)" class="blogs__development__t4">📁 T4</a>
             <ul class="blogs__directory__ul">
               
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/development/t4/custom_output`} class="blogs__development__t4__custom_output">
-                 Custom Output
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/development/t4/editors`} class="blogs__development__t4__editors">
-                 Editors
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/development/t4/templatecontent`} class="blogs__development__t4__templatecontent">
-                 Template Content
-               </a>
-             </li>
-            </ul>
-          </li>
-         </ul>
-       </li>
-       <li class="blogs__list__item">
-         📁 Food
-         <ul class="blogs__directory__ul">
-           
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/food/20-items-to-shop`} class="blogs__food__20-items-to-shop">
-              20 Items To Shop
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/food/being-prepared`} class="blogs__food__being-prepared">
-              Being Prepared
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;&nbsp;📁 Proteinworks
-            <ul class="blogs__directory__ul">
-              
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R
-               <a href={`/blogs/food/proteinworks/choc-fudge-bar`} class="blogs__food__proteinworks__choc-fudge-bar">
-                 Choc Fudge Bar
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/food/proteinworks/protein-porridge-360`} class="blogs__food__proteinworks__protein-porridge-360">
-                 Apple & Cinnamon, Protein Porridge 360
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/food/proteinworks/savoury-supermeals-chicken-noodle`} class="blogs__food__proteinworks__savoury-supermeals-chicken-noodle">
-                 Savoury Supermeals, Chicken Noodle
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/food/proteinworks/savoury-supermeals-mac-and-cheese`} class="blogs__food__proteinworks__savoury-supermeals-mac-and-cheese">
-                 Savoury Supermeals, Mac And Cheese
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/food/proteinworks/superfood-breakfast-bowl`} class="blogs__food__proteinworks__superfood-breakfast-bowl">
-                 Apple & Cinnamon, Superfood Breakfast Bowl
-               </a>
-             </li>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/development/t4/custom_output`} class="blogs__development__t4__custom_output">Custom Output</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/development/t4/editors`} class="blogs__development__t4__editors">Editors</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/development/t4/templatecontent`} class="blogs__development__t4__templatecontent">Template Content</a></td>
+               </tr>
+             </table>
             </ul>
           </li>
          </ul>
        </li>
-       <li class="blogs__list__item">
-         📁 Hardware
+       <li class="blogs__list__folderitem">
+         <a onclick="handleFolderClick(event)" class="blogs__food">📁 Food</a>
          <ul class="blogs__directory__ul">
            
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/hardware/nas-operating-systems`} class="blogs__hardware__nas-operating-systems">
-              Nas Operating Systems
-            </a>
-          </li>
-         </ul>
-       </li>
-       <li class="blogs__list__item">
-         📁 Helpful
-         <ul class="blogs__directory__ul">
-           
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/helpful/royalmail`} class="blogs__helpful__royalmail">
-              Royal Mail Phone Number
-            </a>
-          </li>
-         </ul>
-       </li>
-       <li class="blogs__list__item">
-         📁 Keyboard
-         <ul class="blogs__directory__ul">
-           
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/keyboard/BuildGuides`} class="blogs__keyboard__BuildGuides">
-              Build Guides
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/keyboard/Components`} class="blogs__keyboard__Components">
-              Components
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/keyboard/KiCadExamples`} class="blogs__keyboard__KiCadExamples">
-              Kicad Examples
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/keyboard/TaskList`} class="blogs__keyboard__TaskList">
-              Keyboard Roadmap
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/keyboard/keyboard-index`} class="blogs__keyboard__keyboard-index">
-              Index
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/keyboard/keylayer-plate-thickness`} class="blogs__keyboard__keylayer-plate-thickness">
-              Keylayer Plate Thickness
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/keyboard/splitkb`} class="blogs__keyboard__splitkb">
-              Splitkb
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;ы
-            <a href={`/blogs/keyboard/tools`} class="blogs__keyboard__tools">
-              Tools
-            </a>
-          </li>
-          <li class="blogs__list__item">
-            &nbsp;&nbsp;&nbsp;📁 Ergogen
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/food/20-items-to-shop`} class="blogs__food__20-items-to-shop">20 Items To Shop</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/food/being-prepared`} class="blogs__food__being-prepared">Being Prepared</a></td>
+            </tr>
+          </table>
+          <li class="blogs__list__folderitem">
+            &nbsp;&nbsp;&nbsp;<a onclick="handleFolderClick(event)" class="blogs__food__proteinworks">📁 Proteinworks</a>
             <ul class="blogs__directory__ul">
               
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/keyboard/ergogen/articles`} class="blogs__keyboard__ergogen__articles">
-                 Articles
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/keyboard/ergogen/footprints`} class="blogs__keyboard__ergogen__footprints">
-                 Footprints
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/keyboard/ergogen/get-layout-file`} class="blogs__keyboard__ergogen__get-layout-file">
-                 Get Keyboard Layout File From Ergogen
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/keyboard/ergogen/links`} class="blogs__keyboard__ergogen__links">
-                 Ergogen Links
-               </a>
-             </li>
-             <li class="blogs__list__item">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ы
-               <a href={`/blogs/keyboard/ergogen/mounting-hole-in-outline`} class="blogs__keyboard__ergogen__mounting-hole-in-outline">
-                 Mounting Hole In Outline
-               </a>
-             </li>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rvw</td>
+                 <td><a href={`/blogs/food/proteinworks/choc-fudge-bar`} class="blogs__food__proteinworks__choc-fudge-bar">Choc Fudge Bar</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/food/proteinworks/protein-porridge-360`} class="blogs__food__proteinworks__protein-porridge-360">Apple & Cinnamon, Protein Porridge 360</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/food/proteinworks/savoury-supermeals-chicken-noodle`} class="blogs__food__proteinworks__savoury-supermeals-chicken-noodle">Savoury Supermeals, Chicken Noodle</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/food/proteinworks/savoury-supermeals-mac-and-cheese`} class="blogs__food__proteinworks__savoury-supermeals-mac-and-cheese">Savoury Supermeals, Mac And Cheese</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/food/proteinworks/superfood-breakfast-bowl`} class="blogs__food__proteinworks__superfood-breakfast-bowl">Apple & Cinnamon, Superfood Breakfast Bowl</a></td>
+               </tr>
+             </table>
+            </ul>
+          </li>
+         </ul>
+       </li>
+       <li class="blogs__list__folderitem">
+         <a onclick="handleFolderClick(event)" class="blogs__hardware">📁 Hardware</a>
+         <ul class="blogs__directory__ul">
+           
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/hardware/nas-operating-systems`} class="blogs__hardware__nas-operating-systems">Nas Operating Systems</a></td>
+            </tr>
+          </table>
+         </ul>
+       </li>
+       <li class="blogs__list__folderitem">
+         <a onclick="handleFolderClick(event)" class="blogs__helpful">📁 Helpful</a>
+         <ul class="blogs__directory__ul">
+           
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/helpful/royalmail`} class="blogs__helpful__royalmail">Royal Mail Phone Number</a></td>
+            </tr>
+          </table>
+         </ul>
+       </li>
+       <li class="blogs__list__folderitem">
+         <a onclick="handleFolderClick(event)" class="blogs__keyboard">📁 Keyboard</a>
+         <ul class="blogs__directory__ul">
+           
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/keyboard/BuildGuides`} class="blogs__keyboard__BuildGuides">Build Guides</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/keyboard/Components`} class="blogs__keyboard__Components">Components</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/keyboard/KiCadExamples`} class="blogs__keyboard__KiCadExamples">Kicad Examples</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/keyboard/TaskList`} class="blogs__keyboard__TaskList">Keyboard Roadmap</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/keyboard/keyboard-index`} class="blogs__keyboard__keyboard-index">Index</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/keyboard/keylayer-plate-thickness`} class="blogs__keyboard__keylayer-plate-thickness">Keylayer Plate Thickness</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/keyboard/splitkb`} class="blogs__keyboard__splitkb">Splitkb</a></td>
+            </tr>
+          </table>
+          <table>
+            <tr class="blogs__list__fileitem">
+              <td class="blogs__filetype">&nbsp;&nbsp;Blg</td>
+              <td><a href={`/blogs/keyboard/tools`} class="blogs__keyboard__tools">Tools</a></td>
+            </tr>
+          </table>
+          <li class="blogs__list__folderitem">
+            &nbsp;&nbsp;&nbsp;<a onclick="handleFolderClick(event)" class="blogs__keyboard__ergogen">📁 Ergogen</a>
+            <ul class="blogs__directory__ul">
+              
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/keyboard/ergogen/articles`} class="blogs__keyboard__ergogen__articles">Articles</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/keyboard/ergogen/footprints`} class="blogs__keyboard__ergogen__footprints">Footprints</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/keyboard/ergogen/get-layout-file`} class="blogs__keyboard__ergogen__get-layout-file">Get Keyboard Layout File From Ergogen</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/keyboard/ergogen/links`} class="blogs__keyboard__ergogen__links">Ergogen Links</a></td>
+               </tr>
+             </table>
+             <table>
+               <tr class="blogs__list__fileitem">
+                 <td class="blogs__filetype">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blg</td>
+                 <td><a href={`/blogs/keyboard/ergogen/mounting-hole-in-outline`} class="blogs__keyboard__ergogen__mounting-hole-in-outline">Mounting Hole In Outline</a></td>
+               </tr>
+             </table>
             </ul>
           </li>
          </ul>
@@ -295,6 +295,10 @@
     border-width: 0 1px 0 0;
     overflow-y: auto;
     z-index: 1000;
+  }
+
+  .blogs__filetype {
+    font-size: 0.5rem;
   }
 
   ul {
