@@ -10,7 +10,7 @@ date: "2024-04-15"
 tags: ["breakfast", "protein works", "bars", "snack"]
 brand: "protein works"
 recommend: "🤔"
-verdict: " Leaning No 👎"
+verdict: "Leaning No 👎"
 verdictColour: "orange"
 ---
 
