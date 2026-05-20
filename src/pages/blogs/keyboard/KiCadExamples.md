@@ -49,4 +49,6 @@ GitHub Repo, a load of kicad_mod files
 
 <!-- [Components](https://github.com/keebio/keebio-components) -->
 
+### Others
 
+[keyball 61](https://github.com/Yowkees/keyball/blob/main/keyball61/doc/rev1/buildguide_en.md)
