@@ -52,3 +52,5 @@ GitHub Repo, a load of kicad_mod files
 ### Others
 
 [keyball 61](https://github.com/Yowkees/keyball/blob/main/keyball61/doc/rev1/buildguide_en.md)
+
+too small, but has a trackball example
