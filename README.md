@@ -10,7 +10,9 @@
     - cheat sheets made of languages written
 - expressing my own opinion on products I have bought, tried and felt there was something worth mentioning
 - legend
-    - `R` stands for Review
-    - `ы` stands for Blog 
-    <!-- - `C` stands for Cheet Sheet -->
+    Symbol | Definition
+    ---|---
+    `Rvw`|Review
+    `Blg`|Blog
+    `CS`|Cheat Sheet
 

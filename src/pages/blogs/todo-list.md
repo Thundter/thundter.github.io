@@ -8,7 +8,7 @@ tags: ["todo", "roadmap"]
 - [x] directory structure
     - [ ] bug: some file types are incorrectly shown
     - [ ] bug: left spacing not correctly aligned between folders & files
-    - [ ] bug: blogs.py does not handler emoji's
+    - [ ] bug: blogs.py does not handle emoji's
     - [ ] size based on text width automatically
     - [ ] consecutive table in html
     - [x] exclusivly left
@@ -33,6 +33,7 @@ tags: ["todo", "roadmap"]
 - [ ] bookmarking site shows repo not site name
 - [ ] bug: show correct path with url
 - [ ] document astro site creation process
+- [ ] site icon
 
 <!--
 - [x] make poster optional
