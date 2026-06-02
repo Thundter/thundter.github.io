@@ -29,9 +29,9 @@ tags: ["todo", "roadmap"]
     - [ ] better formatting
     - [x] layout
     - [x] example
-- [x] recipes
-- [ ] bookmarking site shows repo not site name
-- [ ] bug: show correct path with url
+- [ ] recipes
+- [ ] bug: bookmarking site shows repo not site name
+- [ ] DevOps: show correct path with url
 - [ ] document astro site creation process
 - [ ] site icon
 
