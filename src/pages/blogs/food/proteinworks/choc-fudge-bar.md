@@ -4,14 +4,12 @@ layout: "../../../../layouts/Review.astro"
 #   src:  "sleeping-cat.jpg"
 #   width: 600
 title: "Choc Fudge Bar"
-# subtitle: "Some things are just not meant to be"
 # website: "https://www.theproteinworks.com/protein-porridge-360"
 date: "2024-04-15"
 tags: ["breakfast", "protein works", "bars", "snack"]
 brand: "protein works"
-recommend: "🤔"
-verdict: "Leaning No 👎"
-verdictColour: "orange"
+verdict: "Mid 🤔"
+verdictColour: "yellow"
 ---
 
 It takes a moment to get used to the flavour but overall, not bad. Ingredient choice seems like a chemical experiment though

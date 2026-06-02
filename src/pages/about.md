@@ -17,7 +17,7 @@ tags: ["about"]
 - **expressing my own opinion on products I have bought, tried and felt there was something worth mentioning**
 
 ### Legend
-- `R` stands for Review
-- `ы` stands for Blog 
+- `Rvw` stands for Review
+- `Blg` stands for Blog 
 <!-- - `C` stands for Cheet Sheet -->
 
