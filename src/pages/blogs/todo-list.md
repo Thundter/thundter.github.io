@@ -5,8 +5,7 @@ date: "2026-03-27"
 tags: ["todo", "roadmap"]
 ---
 
-- [x] directory structure
-    - [ ] bug: some file types are incorrectly shown
+- Directory Structure
     - [ ] bug: left spacing not correctly aligned between folders & files
     - [ ] bug: blogs.py does not handle emoji's
     - [ ] size based on text width automatically
@@ -25,17 +24,20 @@ tags: ["todo", "roadmap"]
     - [x] display
     - [ ] search by
         - [ ] test
-- [x] reviews
+- [ ] reviews
     - [ ] better formatting
     - [x] layout
     - [x] example
 - [ ] recipes
-- [ ] bug: bookmarking site shows repo not site name
-- [ ] DevOps: show correct path with url
+- DevOps
+    - [ ] bug: bookmarking site shows repo not site name
+    - [ ] show correct path with url
 - [ ] document astro site creation process
 - [ ] site icon
 
 <!--
+- Directory Structure
+    - [x] bug: some file types are incorrectly shown
 - [x] make poster optional
     - [x] bug: optional image not rendering when given a path
 - [x] push to git 

@@ -121,12 +121,20 @@ def getFileType(file):
             lineContent=lineContent.strip()
             # print("getFileType:", lineContent) 
             if lineContent == "---":
-                # no recommend found, returning ы
-                output="Blg"
+                print(f"getFileType:: file:{file} | no layout !") 
+                output="U"
                 break
-            elif lineContent.startswith("recommend:"):
-                # recommend found, returning R
-                output="Rvw"
+            elif lineContent.startswith("layout:"):
+                # layout found
+                layout = lineContent.replace("layout:", "").strip().strip("\"").replace(".astro", "")
+                layout = layout.split("/")[-1]
+                
+                if layout == "Review":
+                    output="Rvw"
+                else:    
+                    # print(f"getFileType:: file:{file} | layout:{layout} ") 
+                    output="Blg"
+
                 break
             else:
                 continue
@@ -134,7 +142,8 @@ def getFileType(file):
         return output
     else:
         my_file.close()
-        output="Blg"
+        print(f"getFileType:: file:{file} | --- not found, file type unknown !") 
+        return "???"
 
 # delete previous file
 if os.path.exists("Blogs.astro"):
