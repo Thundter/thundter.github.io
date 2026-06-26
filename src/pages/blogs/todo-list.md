@@ -8,7 +8,7 @@ tags: ["todo", "roadmap"]
 - Directory Structure
     - [ ] bug: left spacing not correctly aligned between folders & files
     - [ ] bug: blogs.py does not handle emoji's
-    - [ ] bug: not in alpha order 
+    - [ ] bug: not in alphabetical order 
     - [ ] size based on text width automatically
     - [ ] consecutive table in html
     - [x] exclusivly left
