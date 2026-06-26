@@ -8,6 +8,7 @@ tags: ["todo", "roadmap"]
 - Directory Structure
     - [ ] bug: left spacing not correctly aligned between folders & files
     - [ ] bug: blogs.py does not handle emoji's
+    - [ ] bug: not in alpha order 
     - [ ] size based on text width automatically
     - [ ] consecutive table in html
     - [x] exclusivly left
@@ -24,11 +25,10 @@ tags: ["todo", "roadmap"]
     - [x] display
     - [ ] search by
         - [ ] test
-- [ ] reviews
+- Reviews
     - [ ] better formatting
     - [x] layout
     - [x] example
-- [ ] recipes
 - DevOps
     - [ ] bug: bookmarking site shows repo not site name
     - [ ] show correct path with url
@@ -45,4 +45,7 @@ tags: ["todo", "roadmap"]
 - [x] recent blogs
     - [x] testing
 - [x] push to live
+- Recipes
+    - [x] layout
+    - [x] example
 -->

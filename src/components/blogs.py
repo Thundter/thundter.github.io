@@ -39,9 +39,11 @@ def interpretDirectory(spacer, directory):
     className="__".join(directoryParts)
     className=f"blogs__{className}".replace("____","__")
 
+    # {spacer}  {nbsp}<a onclick="handleFolderClick(event)" class="{className}">{directoryIcon}{directoryName.title()}</a>
+
     return f"""
     {spacer}<li class="blogs__list__folderitem">
-    {spacer}  {nbsp}<a onclick="handleFolderClick(event)" class="{className}">{directoryIcon}{directoryName.title()}</a>
+    {spacer}  {nbsp}<label>{directoryIcon}{directoryName.title()}</label>
     {spacer}  <ul class="blogs__directory__ul">
     {spacer}    {content}
     {spacer}  </ul>

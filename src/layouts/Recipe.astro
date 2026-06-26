@@ -1,0 +1,96 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+import Main from "./Main.astro";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+type Ingredient = {
+  quantity?: number;
+  unit?: string;
+  description: string;
+};
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  source?: string;
+  poster?: ImageMetadata;
+  subtitle?: string;
+  date: Date;
+  tags: Array<string>;
+  ingredients?: Array<Ingredient>;
+}>;
+
+const { title, source, poster, subtitle, date, tags, ingredients } =
+  Astro.props.frontmatter;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/**/[^_]*.{png,jpg,jpeg,tiff,webp,gif,svg,avif}"
+);
+const imagePath = poster ? `/src/assets/${poster?.src}` : "";
+const image = poster && images[imagePath]();
+if (poster && !image) {
+  throw new Error(`"${poster}" or "${imagePath}" not found!`);
+}
+---
+
+<Main title="Review" , tags={tags}>
+  {
+    poster && image && (
+      <Image
+        src={image}
+        alt=""
+        width={poster.width ?? 800}
+        height={poster.height}
+      />
+    )
+  }
+
+  <h1>{title}</h1>
+  {source && <a href={source}>Source</a>}
+
+  {subtitle && <h2>{subtitle}</h2>}
+  {date && <p class="date">published: {date}</p>}
+  {tags && <p class="tags">tags: {tags.join(",")}</p>}
+
+  {ingredients &&
+
+    <h3>🛒 Ingredients</h3>
+
+    <ul>
+    {
+      ingredients?.map((ingredient) => (
+        <li> {ingredient.quantity} { ingredient.unit } {ingredient.description} </li>
+      ))
+    }
+    </ul>
+
+    <h3> 🥣 Instructions</h3>
+  }
+
+  <slot />
+</Main>
+<style>
+  h1 + h2 {
+    margin-bottom: 0rem;
+  }
+
+  .figure {
+    margin: 0;
+  }
+
+  .figure__image {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .figure__caption {
+    font-size: 0.9rem;
+  }
+
+  .date,
+  .tags {
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+  }
+</style>
