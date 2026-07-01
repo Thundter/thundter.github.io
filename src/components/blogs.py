@@ -133,6 +133,8 @@ def getFileType(file):
                 
                 if layout == "Review":
                     output="Rvw"
+                elif layout == "Recipe":
+                    output="Rcp"
                 else:    
                     # print(f"getFileType:: file:{file} | layout:{layout} ") 
                     output="Blg"

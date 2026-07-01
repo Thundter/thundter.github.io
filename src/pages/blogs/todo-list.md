@@ -6,38 +6,38 @@ tags: ["todo", "roadmap"]
 ---
 
 - Directory Structure
-    - [ ] bug: left spacing not correctly aligned between folders & files
-    - [ ] bug: blogs.py does not handle emoji's
-    - [ ] bug: not in alphabetical order 
     - [ ] size based on text width automatically
     - [ ] consecutive table in html
-    - [x] exclusivly left
-    - [x] get directories
-    - [x] show sub blogs
-    - [x] terminating in folder different symbol
-- [ ] search functionality
-- [ ] improved theme colours
-- [ ] improved visual aspect of site 
-- [ ] import md files from Minddump
-- [ ] tags
-    - [x] integrate
-        - [x] test
-    - [x] display
+- Search functionality
+- Improved theme colours
+- Improved visual aspect of site 
+- Import md files from Minddump - Ongoing
+- Tags
     - [ ] search by
         - [ ] test
 - Reviews
     - [ ] better formatting
-    - [x] layout
-    - [x] example
 - DevOps
     - [ ] bug: bookmarking site shows repo not site name
     - [ ] show correct path with url
 - [ ] document astro site creation process
 - [ ] site icon
 
-<!--
+### already completed
+
 - Directory Structure
+    - [x] bug: left spacing not correctly aligned between folders & files
+    - [x] bug: not in alphabetical order 
     - [x] bug: some file types are incorrectly shown
+    - [x] bug: Blogs.astro generation does not handle emoji's
+    - [x] exclusivly left
+    - [x] get directories
+    - [x] show sub blogs
+    - [x] terminating in folder different symbol
+- Tags
+    - [x] integrate
+        - [x] test
+    - [x] display
 - [x] make poster optional
     - [x] bug: optional image not rendering when given a path
 - [x] push to git 
@@ -48,4 +48,6 @@ tags: ["todo", "roadmap"]
 - Recipes
     - [x] layout
     - [x] example
--->
+- Reviews
+    - [x] layout
+    - [x] example
