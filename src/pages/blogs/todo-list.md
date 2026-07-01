@@ -23,7 +23,7 @@ tags: ["todo", "roadmap"]
 - [ ] document astro site creation process
 - [ ] site icon
 
-### already completed
+### Already Complete
 
 - Directory Structure
     - [x] bug: left spacing not correctly aligned between folders & files
