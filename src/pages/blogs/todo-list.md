@@ -7,10 +7,8 @@ tags: ["todo", "roadmap"]
 
 - Directory Structure
     - [ ] size based on text width automatically
-    - [ ] consecutive table in html
+    - [ ] tabs in code not aligned correctly ?
 - Search functionality
-- Improved theme colours
-- Improved visual aspect of site 
 - Import md files from Minddump - Ongoing
 - Tags
     - [ ] search by
@@ -22,6 +20,8 @@ tags: ["todo", "roadmap"]
     - [ ] show correct path with url
 - [ ] document astro site creation process
 - [ ] site icon
+- Improved theme colours
+- Improved visual aspect of site 
 
 ### Already Complete
 
@@ -34,6 +34,7 @@ tags: ["todo", "roadmap"]
     - [x] get directories
     - [x] show sub blogs
     - [x] terminating in folder different symbol
+    - [x] consecutive table in html
 - Tags
     - [x] integrate
         - [x] test
