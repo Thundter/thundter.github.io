@@ -1,5 +1,5 @@
 ---
-layout: "../../../layouts/Blog.astro"
+layout: "../../../../layouts/Blog.astro"
 title: "Javascript"
 date: "2026-06-27"
 tags: ["dev", "javascript"]
