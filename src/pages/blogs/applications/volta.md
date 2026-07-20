@@ -12,6 +12,8 @@ Simply: allows more than one application with different requirements for version
 
     or `choco install volta -y`
 
+    or for linux `curl https://get.volta.sh | bash`
+
 2.  navigate to code that you need node installed on in terminal and run the following in that directory 
 
     `volta install node@14.21.3`
