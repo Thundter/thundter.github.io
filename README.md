@@ -16,3 +16,8 @@
     `Blg`|Blog
     `CS`|Cheat Sheet
 
+## runs this project 
+
+`npm run start`
+
+initialises http://localhost:4321
