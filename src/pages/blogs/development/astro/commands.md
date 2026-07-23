@@ -1,8 +1,8 @@
 ---
-layout:"../../../../layouts/Blog.astro"
-title:"Commands"
-date:"2026-07-23"
-tags:[blogs,development,astro,commands]
+layout: "../../../../layouts/Blog.astro"
+title: "Commands"
+date: "2026-07-23"
+tags: [blogs,development,astro,commands]
 ---
 
 command|what it does
