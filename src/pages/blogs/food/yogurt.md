@@ -1,6 +1,6 @@
 ---
 layout: "../../../layouts/Blog.astro"
-title: "Yogurt"
+title: "Yogurt Expose"
 date: "2026-06-19"
 tags: ["food", "yogurt", "exposure"]
 ---

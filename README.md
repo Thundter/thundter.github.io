@@ -12,11 +12,12 @@
 - legend
     Symbol | Definition
     ---|---
-    `Rvw`|Review
-    `Blg`|Blog
-    `CS`|Cheat Sheet
+    `⭐`|Review
+    `✍️`|Blog
+    `🍽️`|Recipe
+    <!-- `CS`|Cheat Sheet -->
 
-## runs this project 
+## To run this project 
 
 `npm run start`
 

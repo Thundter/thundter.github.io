@@ -1,6 +1,6 @@
 ---
 layout: "../../../layouts/Blog.astro"
-title: "splitkb"
+title: "SplitKB"
 website: "https://splitkb.com/"
 date: "2024-03-24"
 tags: ["keyboard", "splitkb"]

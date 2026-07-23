@@ -1,6 +1,6 @@
 ---
 layout: "../../../../layouts/Blog.astro"
-title: "directory structure of blogs collection"
+title: "Directory structure of blogs collection"
 date: "2026-04-13"
 tags: ["astro", "blogs", "collection"]
 ---

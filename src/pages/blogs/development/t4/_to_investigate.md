@@ -1,6 +1,6 @@
 ---
 layout: "../../../../layouts/Blog.astro"
-title: "to investigate"
+title: "To Investigate"
 date: "2019-11-14"
 tags: ["dev","t4", "Template"]
 ---

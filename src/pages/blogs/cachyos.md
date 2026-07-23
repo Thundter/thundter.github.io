@@ -16,6 +16,6 @@ tags: ["todo", "CachyOS"]
 
 package | pacman
 |---|---|
-brave origin | `sudo pacman -S brave-origin-nightly-bin`
+Brave Origin | `sudo pacman -S brave-origin-nightly-bin`
  └ |`sudo pacman -S brave-origin-bin`
-waterfox|`sudo pacman -S waterfox-bin`
+Waterfox|`sudo pacman -S waterfox-bin`

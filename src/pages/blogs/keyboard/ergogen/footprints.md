@@ -1,6 +1,6 @@
 ---
 layout: "../../../../layouts/Blog.astro"
-title: "footprints"
+title: "Footprints"
 date: "2026-04-11"
 tags: ["ergogen", "footprints"]
 ---

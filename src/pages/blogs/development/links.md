@@ -1,6 +1,6 @@
 ---
 layout: "../../../layouts/Blog.astro"
-title: "Devlopment Links"
+title: "Development Links"
 date: "2026-05-16"
 tags: ["dev", "links"]
 ---
