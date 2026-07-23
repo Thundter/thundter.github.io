@@ -6,6 +6,7 @@ tags: ["todo", "roadmap"]
 ---
 
 - Directory Structure
+    - [ ] bug: not in alphabetical order 
     - [ ] size based on text width automatically
     - [ ] tabs in code not aligned correctly ?
 - Search functionality
@@ -27,7 +28,6 @@ tags: ["todo", "roadmap"]
 
 - Directory Structure
     - [x] bug: left spacing not correctly aligned between folders & files
-    - [x] bug: not in alphabetical order 
     - [x] bug: some file types are incorrectly shown
     - [x] bug: Blogs.astro generation does not handle emoji's
     - [x] exclusivly left
