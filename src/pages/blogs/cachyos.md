@@ -8,6 +8,10 @@ tags: ["todo", "CachyOS"]
 
  <!-- │├└ -->
 
+## Links
+
+[GitHub](https://github.com/cachyos)
+
 ## Packages
 
 package | pacman
