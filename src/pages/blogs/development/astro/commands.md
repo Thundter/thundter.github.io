@@ -5,9 +5,9 @@ date: "2026-07-23"
 tags: [blogs,development,astro,commands]
 ---
 
-command|what it does
+Command | What it does
 ---|---
-`npm install astro`|
+`npm install astro`|Installs astro
 `astro dev`|Starts the local development server with live updates.
 `astro build`|Builds the project for production, outputting static files to a dist/ directory.
 `astro preview`|Locally previews the built site.
