@@ -1,7 +1,8 @@
 ---
 layout: "../../../layouts/Recipe.astro"
-source: "https://ifoodreal.com/greek-yogurt-pizza-dough/"
-title: "Traditional Rice Pudding by Mary Berry"
+source: "https://www.youtube.com/watch?v=fy52HYNHp5s"
+title: "Traditional Rice Pudding"
+subtitle: "Classic recipe for Traditional Rice Pudding"
 date: "2026-07-26"
 tags: ["food", "rice", "pudding"]
 ingredients: [
@@ -13,7 +14,7 @@ ingredients: [
 ]
 ---
 
-In this video, *Mary Berry* shares her classic recipe for **Traditional Rice Pudding**. Here are the steps and ingredients she follows:
+
 
 1. **Preparation:** Thoroughly butter your baking dish to prevent sticking and add richness
 2. **Heating Milk:** Heat the milk until it is piping hot, but ensure you do not let it reach a boil
@@ -23,6 +24,4 @@ In this video, *Mary Berry* shares her classic recipe for **Traditional Rice Pud
 6. **Final Bake:** Return the dish to the oven at the same temperature for about two hours until the rice has absorbed the milk and the pudding is creamy
 7. **Serving:** Serve piping hot with a dollop of your favorite jam
 
-## Source
-
-https://www.youtube.com/watch?v=fy52HYNHp5s
+Recipe by Mary Berry
