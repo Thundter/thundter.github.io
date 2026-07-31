@@ -5,6 +5,14 @@ date: "2026-07-31"
 tags: [blogs,development,javascript,node]
 ---
 
+### examples 
+
+in the examples below 
+
+``` js
+var file // a file path as string
+```
+
 ### date times of a file 
 
 - `birthdate` - created
@@ -12,9 +20,9 @@ tags: [blogs,development,javascript,node]
 - `ctime` - changed
 
 ``` js
-const Fs = require('fs')
+import fs from 'fs'
 
-const { birthtime, mtime, ctime } = Fs.statSync(file)
+const { birthtime, mtime, ctime } = fs.statSync(file)
 ```
 
 all values are date instances
@@ -25,21 +33,19 @@ all values are date instances
 - uses helper library fs-extra providing same API as `fs` with additional convenience methods
 
 ``` js
-const Fs = require('fs-extra')
+import fs from 'fs-extra'
 
-async function ensureFile (path) {  
-  await Fs.ensureFile(path)
-}
+await fs.ensureFile(path)
 ```
 
 ### Async Check File Exists
 
 ``` js
-const { promises: Fs } = require('fs')
+import { promises as fsPromises } from 'fs';   
 
 async function exists (path) {  
   try {
-    await Fs.access(path)
+    await fsPromises.access(path)
     return true
   } catch {
     return false
@@ -50,35 +56,20 @@ async function exists (path) {
 ### Async rename file
 
 ``` js
-const { promises: Fs } = require('fs')
+import { promises as fsPromises } from 'fs';   
 
-await Fs.rename(oldPath, newPath)  
+await fsPromises.rename(oldPath, newPath)  
 ```
 
 ### is path a directory|file
 
 ``` js
-const { promises: Fs } = require('fs')
+import { promises as fsPromises } from 'fs';   
 
-/**
- * @param {String} path
- * @returns {Boolean}
- */
-async function isDirectory(path) {  
-  const stats = await Fs.stat(path)
+const stats = await Fs.stat(path)
 
-  return stats.isDirectory()
-}
-
-/**
- * @param {String} path
- * @returns {Boolean}
- */
-async function isFile(path) {  
-  const stats = await Fs.stat(path)
-
-  return stats.isFile()
-}
+console.log(stats.isDirectory())
+console.log(stats.isFile())
 ```
 
 ### home directory
@@ -88,3 +79,30 @@ const os = require('os')
 
 os.homedir()  
 ```
+
+### update file changed & access date times
+
+- creates `file` if it doesn’t exist
+- @param {String} file
+
+``` js
+import fs from 'fs-extra'
+
+async touch (file) {  
+  await fs.ensureFile(file)
+
+  const now = new Date()
+  await fs.utimes(file, now, now)
+}
+```
+
+### file contents 
+
+- Returns the content of the given file
+
+``` js
+import { promises as fsPromises } from 'fs';
+
+const contents = await fsPromises.readFile(file, 'utf8');   
+```
+
