@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Blog.astro"
+layout: "../../../layouts/Blog.astro"
 title: "Scalable Vector Graphics"
 date: "2026-07-19"
 tags: ["Scalable Vector Graphics"]
