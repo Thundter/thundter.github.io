@@ -6,7 +6,7 @@ const initialDirectory = "./blogs"
 const checkDirectory = (directory) => {
     var directories = []
 
-    // console.log(`checkDirectory: ${directory}`)
+    console.log(`checkDirectory: ${directory}`)
 
     fs.readdirSync(directory).map(item => {
         var diskItem = directory + '/' + item
