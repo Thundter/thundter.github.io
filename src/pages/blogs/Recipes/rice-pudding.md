@@ -14,8 +14,6 @@ ingredients: [
 ]
 ---
 
-
-
 1. **Preparation:** Thoroughly butter your baking dish to prevent sticking and add richness
 2. **Heating Milk:** Heat the milk until it is piping hot, but ensure you do not let it reach a boil
 3. **Assembly:** Add the rice and sugar to the buttered dish, then pour the hot milk over the top and stir well

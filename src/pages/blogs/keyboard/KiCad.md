@@ -1,9 +1,15 @@
 ---
 layout: "../../../layouts/Blog.astro"
-title: "KiCad Examples"
+title: "KiCad"
 date: "2024-03-24"
 tags: ["keyboard", "KiCad", "example"]
 ---
+
+## Links
+
+[Getting Started](https://dev-docs.kicad.org/en/getting-started/index.html)
+
+## Examples
 
 When attempting to design my own split keyboard, I needed some examples for reference. These links contain the reseach that board.
 

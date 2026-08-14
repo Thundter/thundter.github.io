@@ -25,7 +25,8 @@ r/MechanicalKeyboards
 
 [How I Made: A PCB Mechanical Keyboard](https://magazine.raspberrypi.com/articles/how-i-made-a-pcb-mechanical-keyboard) - very basic guide on how to build a keyboard
 
-[ruiqimao](https://github.com/ruiqimao) - [Keyboard PCB Guide](https://github.com/ruiqimao/keyboard-pcb-guide)
+[ruiqimao](https://github.com/ruiqimao) > [Keyboard PCB Guide](https://github.com/ruiqimao/keyboard-pcb-guide)
+    uses ATMEGA32U4 => low-power Microchip 8-bit RISC-based microcontroller: 32 KB Flash program memory, 2.5 KB SRAM, 1 KB EEPROM, USB 2.0
 
 [How to Design Mechanical Keyboard Plates and Cases](https://www.youtube.com/watch?v=7azQkSu0m_U) - more focused on design here, rather than construction
 
