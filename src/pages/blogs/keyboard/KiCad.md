@@ -7,6 +7,10 @@ tags: ["keyboard", "KiCad", "example"]
 
 ## Links
 
+[Info Forum](https://forum.kicad.info/)
+
+[Docs](https://docs.kicad.org/)
+
 [Getting Started](https://dev-docs.kicad.org/en/getting-started/index.html)
 
 ## Examples

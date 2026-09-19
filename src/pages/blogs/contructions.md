@@ -18,3 +18,10 @@ tags: [blogs, contructions]
 [Cyberdeck](https://www.youtube.com/watch?v=U5GZeMm5nhI)
 
 [3D Space Mouse](https://www.youtube.com/watch?v=62xlzGs8LXA)
+
+## [Printables](https://www.printables.com/)
+
+[Octagon Fabric](https://www.printables.com/model/1770170-octagon-fabric)
+
+[Foldable Clothes Hanger](https://www.printables.com/model/1653896-grabtor-foldable-print-in-place-clothes-hanger)
+

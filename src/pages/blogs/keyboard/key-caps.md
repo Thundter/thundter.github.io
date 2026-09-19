@@ -1,11 +1,13 @@
 ---
 layout: "../../../layouts/Blog.astro"
-title: "Keys"
-date: "2009-04-22"
-tags: [blogs,keyboard]
+title: "Key Caps"
+date: "2026-10-15"
+tags: [blogs,keyboard,key caps]
 ---
 
+## YT
 
+[3DPrinted Custom Keycaps](https://www.youtube.com/watch?v=ub4cb-u8EWA)
 
 ## Github Projects
 

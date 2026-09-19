@@ -5,7 +5,7 @@ date: "2026-07-19"
 tags: ["keyboard", "keyboards"]
 ---
 
-Disclaimer: - The following links are for research purposes only. I'm still in the process of researching these, so don't take them as an endorsed by me
+Disclaimer: - The following links are for research purposes only. I'm still in the process of researching these, so don't take them as endorsed by me
 
 ## YT
 
@@ -26,3 +26,12 @@ Disclaimer: - The following links are for research purposes only. I'm still in t
 
 [Arctic Keyboard](https://github.com/yamilbknsu/arctic-keyboard)
 
+## [Keyboard Atelier](https://kbatelier.org/)
+
+[wiki](https://wiki.kbatelier.org/)
+
+- [Footprints, Symbols, Libraries](https://wiki.kbatelier.org/books/footprints-symbols-libraries)
+    - [Common Libraries](https://wiki.kbatelier.org/books/footprints-symbols-libraries/page/common-libraries) 
+- [general-pcb-design](https://wiki.kbatelier.org/books/general-pcb-design)
+    - [pcb-review-resources](https://wiki.kbatelier.org/books/general-pcb-design/page/pcb-review-resources)
+        - [kicanvas](https://kicanvas.org/)

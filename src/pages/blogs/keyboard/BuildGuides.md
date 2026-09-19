@@ -21,7 +21,6 @@ r/MechanicalKeyboards
 
 [I Built My Dream Keyboard from Absolute Scratch](https://www.youtube.com/watch?v=7UXsD7nSfDY) - custom KB from scratch ...
 
-[Joe Scotto](https://www.youtube.com/@joe_scotto/videos) - [Design Mechanical Keyboard PCBs with Kicad](https://www.youtube.com/watch?v=8WXpGTIbxlQ) - simple instructions on how to use KiCAD to create a PCB
 
 [How I Made: A PCB Mechanical Keyboard](https://magazine.raspberrypi.com/articles/how-i-made-a-pcb-mechanical-keyboard) - very basic guide on how to build a keyboard
 
@@ -35,6 +34,14 @@ r/MechanicalKeyboards
 [Ergo Mech Keyboards](https://www.reddit.com/r/ErgoMechKeyboards/) [Let's Design A Keyboard With Ergogen v4: A Beginner's Guide To Designing Custom Ergonomic Keyboard PCBs](https://www.reddit.com/r/ErgoMechKeyboards/comments/133z7th/lets_design_a_keyboard_with_ergogen_v4_a/)
 
 [Designing a Custom Keyboard PCB from scratch!](https://www.youtube.com/watch?v=u13yRbBiRYM) - is full size, however is a good overview of the software
+
+### [Joe Scotto](https://www.youtube.com/@joe_scotto/videos)
+
+[Design Mechanical Keyboard PCBs with Kicad](https://www.youtube.com/watch?v=8WXpGTIbxlQ) - simple instructions on how to use KiCAD to create a PCB
+
+#### [GitHub Scotto Keebs](https://github.com/joe-scotto/scottokeebs)
+
+[KiCad](https://github.com/joe-scotto/scottokeebs/tree/main/Extras/ScottoKicad)
 
 ### [Auryn Codes](https://www.youtube.com/@CodingWithAuryn/videos)
 
